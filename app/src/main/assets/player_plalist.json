@@ -1,0 +1,42 @@
+{
+  "accountId": "5420904993001",
+  "policyKey": "BCpkADawqM1RJu5c_I13hBUAi4c8QNWO5QN2yrd_OgDjTCVsbILeGDxbYy6xhZESTFi68MiSUHzMbQbuLV3q-gvZkJFpym1qYbEwogOqKCXK622KNLPF92tX8AY9a1cVVYCgxSPN12pPAuIM",
+  "catalogAssetList": [
+    {
+      "type": "VIDEO",
+      "id": "6031901107001",
+      "title": "A Change Is Gonna Come",
+      "category": "BEGINNER ACOUSTIC"
+    },
+    {
+      "type": "VIDEO",
+      "id": "5420910950001",
+      "title": "Red bird"
+    },
+    {
+      "type": "VIDEO",
+      "id": "5420910949001",
+      "title": "Green bird"
+    },
+    {
+      "type": "VIDEO",
+      "id": "5421546903001",
+      "title": "Creating the Video View"
+    },
+    {
+      "type": "VIDEO",
+      "id": "5421543459001",
+      "title": "Reviewing Tools and Resources"
+    },
+    {
+      "type": "VIDEO",
+      "id": "5421531913001",
+      "title": "Getting a Video from a Remote Server"
+    },
+    {
+      "type": "VIDEO",
+      "id": "5441624003001",
+      "title": "Lake Massapoag - 360"
+    }
+  ]
+}

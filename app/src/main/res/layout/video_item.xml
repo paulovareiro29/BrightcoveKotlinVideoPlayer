@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/video_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="202dp"
+                android:background="@drawable/ic_play"
+                android:contentDescription="@string/video_thumbnail_content_description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/video_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_duration"
+                android:layout_marginTop="@dimen/text_duration"
+                android:layout_marginEnd="@dimen/text_duration"
+                android:layout_marginBottom="@dimen/text_duration"
+                android:background="@color/brightcove_black"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                android:text="@string/default_duration"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textColor="@color/white"
+                android:layout_alignBottom="@+id/video_thumbnail"
+                android:layout_alignRight="@+id/video_thumbnail"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/video_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/text_margin"
+            android:layout_marginTop="12dp"
+            android:textAllCaps="true"
+            android:text="BEGINNER ACOUSTIC"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/video_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            tools:text="Big Buck Bunny" />
+
+
+            <TextView
+                android:id="@+id/video_published_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:text="Dan Lundholm"
+                />
+
+
+
+        <TextView
+            android:id="@+id/video_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textSize="12dp"
+            tools:text="Big Buck Bunny" />
+
+
+
+    </LinearLayout>
+</LinearLayout>
