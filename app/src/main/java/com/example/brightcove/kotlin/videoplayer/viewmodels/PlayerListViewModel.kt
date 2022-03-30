@@ -4,6 +4,7 @@ import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.*
 import com.brightcove.player.model.Video
 import com.example.brightcove.kotlin.videoplayer.Event
+import com.example.brightcove.kotlin.videoplayer.data.model.PlayerPlaylist
 import com.example.brightcove.kotlin.videoplayer.data.source.VideoRepository
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch
@@ -15,9 +16,14 @@ class PlayerListViewModel @ViewModelInject constructor(val videoRepository: Vide
 
     @Suppress("unused")
     val videoList: LiveData<List<Video>> = _videoList
+    val playlist: PlayerPlaylist = videoRepository.getPlaylist()
 
     @ExperimentalCoroutinesApi
     val videoFlow: LiveData<Video> = videoRepository.getVideos().asLiveData()
+
+    private val _playlistToLoad = MutableLiveData<String>()
+    val playlistToLoad : MutableLiveData<String> = _playlistToLoad
+
 
     private val _videoToLoad = MutableLiveData<Event<Video>>()
     val videoToLoad: LiveData<Event<Video>> = _videoToLoad
@@ -35,6 +41,10 @@ class PlayerListViewModel @ViewModelInject constructor(val videoRepository: Vide
             }
         }
 
+    }
+
+    fun changePlaylist(playlist: String){
+        _playlistToLoad.value = playlist
     }
 
     fun openVideo(video: Video) {

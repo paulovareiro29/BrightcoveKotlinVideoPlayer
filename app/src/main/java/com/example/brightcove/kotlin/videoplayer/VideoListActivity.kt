@@ -4,10 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Parcelable
 import android.view.Menu
-import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import com.brightcove.player.model.Video
 import com.example.brightcove.kotlin.videoplayer.viewmodels.PlayerListViewModel
 import dagger.hilt.android.AndroidEntryPoint

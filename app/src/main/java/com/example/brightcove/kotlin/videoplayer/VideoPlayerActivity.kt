@@ -3,11 +3,13 @@ package com.example.brightcove.kotlin.videoplayer
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.TextView
 import com.brightcove.player.edge.Catalog
 import com.brightcove.player.edge.VideoListener
 import com.brightcove.player.model.Video
 import com.brightcove.player.view.BrightcoveExoPlayerVideoView
 import com.brightcove.player.view.BrightcovePlayer
+import com.example.brightcove.kotlin.videoplayer.utils.title
 
 class VideoPlayerActivity : BrightcovePlayer() {
 
@@ -53,6 +55,9 @@ class VideoPlayerActivity : BrightcovePlayer() {
 
     private fun addAndStart(video: Video) {
         brightcoveVideoView.add(video)
+        findViewById<TextView>(R.id.video_player_title).text = video.title
+        findViewById<TextView>(R.id.video_player_description).text = video.description
+
         brightcoveVideoView.start()
     }
 

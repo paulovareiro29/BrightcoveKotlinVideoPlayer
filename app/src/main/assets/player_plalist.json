@@ -6,37 +6,46 @@
       "type": "VIDEO",
       "id": "6031901107001",
       "title": "A Change Is Gonna Come",
-      "category": "BEGINNER ACOUSTIC"
+      "category": "BEGINNER ACOUSTIC",
+      "song": "TEST"
     },
     {
       "type": "VIDEO",
       "id": "5420910950001",
-      "title": "Red bird"
+      "title": "Red bird",
+      "category": "BEGINNER ACOUSTIC",
+      "song": "TEST"
     },
     {
       "type": "VIDEO",
       "id": "5420910949001",
-      "title": "Green bird"
+      "title": "Green bird",
+      "category": "BEGINNER ACOUSTIC",
+      "song": "TEST"
     },
     {
       "type": "VIDEO",
       "id": "5421546903001",
-      "title": "Creating the Video View"
+      "title": "Creating the Video View",
+      "song": "TEST"
     },
     {
       "type": "VIDEO",
       "id": "5421543459001",
-      "title": "Reviewing Tools and Resources"
+      "title": "Reviewing Tools and Resources",
+      "song": "TEST"
     },
     {
       "type": "VIDEO",
       "id": "5421531913001",
-      "title": "Getting a Video from a Remote Server"
+      "title": "Getting a Video from a Remote Server",
+      "song": "TEST2"
     },
     {
       "type": "VIDEO",
       "id": "5441624003001",
-      "title": "Lake Massapoag - 360"
+      "title": "Lake Massapoag - 360",
+      "song": "TEST"
     }
   ]
 }

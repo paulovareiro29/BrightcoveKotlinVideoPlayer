@@ -15,6 +15,11 @@ import kotlin.coroutines.suspendCoroutine
 
 class RemoteVideoDataSource(private val playlist: PlayerPlaylist, private val catalog: Catalog) :
     VideoDataSource {
+
+    override fun getPlaylist(): PlayerPlaylist {
+        return playlist
+    }
+
     override suspend fun getAllVideos(): List<Video> {
 
         val videoPlaylist = mutableListOf<Video>()

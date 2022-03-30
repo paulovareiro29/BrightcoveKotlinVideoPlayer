@@ -8,4 +8,6 @@ class VideoRepository(private val remoteVideoDataSource: VideoDataSource) : Vide
 
     @ExperimentalCoroutinesApi
     override fun getVideos() = remoteVideoDataSource.getVideos()
+
+    override fun getPlaylist() = remoteVideoDataSource.getPlaylist()
 }
